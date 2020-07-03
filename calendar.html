@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="calendar">
+        <div class="month"></div>
+        <div class="date"></div>
+        <div class="week"></div>
+        <div class="year"></div>
+    </div>
+</body>
+<script>
+    const language = navigator.language;   //  en-IN
+    const today = new Date();
+    const month = today.toLocaleString(language, { month: 'long' });
+    const date = today.getDate();
+    const week = today.toLocaleString(language, { weekday: 'long' });
+    const year = today.getFullYear();
+    document.querySelector('.month').innerHTML = month;
+    document.querySelector('.date').innerHTML = date;
+    document.querySelector('.week').innerHTML = week;
+    document.querySelector('.year').innerHTML = year;
+
+</script>
+
+</html>

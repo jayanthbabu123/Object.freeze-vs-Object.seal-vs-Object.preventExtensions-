@@ -1,0 +1,58 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0004;
+    overflow: hidden;
+}
+
+.calendar {
+    background: white;
+    width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,
+            transparent, #0004);
+    box-shadow: 0 1px 0 #bdbdbd,
+        0 5px 0 #fff,
+        0 6px 0 #bdbdbd,
+        0 10px 0 #fff,
+        0 9px 0 #bdbdbd,
+        0 0 0 1px #bdbdbd;
+}
+
+.month {
+    padding: 7px 10px;
+    background: orange;
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.date {
+    font-size: 45px;
+    margin: 8px;
+    font-weight: 600;
+}
+
+.week {
+    color: #999;
+}
+
+.year {
+    font-size: 20px;
+    color: green;
+    margin: 10px;
+    font-weight: 700;
+}
